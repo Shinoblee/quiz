@@ -88,13 +88,14 @@ class Quiz
         end
     end
 
-    def display_wrong_answer
-        @wrong_items.length.times do |array|
-            array.each do |k, v|
-                puts "The answer to #{k} was #{v}"
-            end
-        end
-    end
+    # not working!
+    # def display_wrong_answer
+    #     @wrong_items.length.times do |array|
+    #         array.each do |k, v|
+    #             puts "The answer to #{k} was #{v}"
+    #         end
+    #     end
+    # end
 
 end
 
@@ -107,5 +108,5 @@ end
 
 
 start
-prompt = Prompts.new()#question: [], answer: [] 
+prompt = Prompts.new()
 prompt.quiz_number
